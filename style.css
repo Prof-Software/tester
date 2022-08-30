@@ -1,0 +1,342 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 65px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    font-family: 'Jost', sans-serif;
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 593px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('https://static.vecteezy.com/system/resources/previews/002/106/276/non_2x/geometric-black-and-gold-background-free-vector.jpg') no-repeat center center/cover ;
+    height: 700px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity:100 */
+}
+
+#home h1{
+    color:white;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+#home p{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Jost', sans-serif;
+
+}
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 30px white;
+    }
+    
+    to {
+      text-shadow: 0 0 30px white;
+    }
+  }
+  .btn{
+    font-family: 'Jost', sans-serif;
+    margin: 14px;
+    padding: 1px;
+    height: 42px;
+    width: 145px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+    border: 5px solid white;
+  }
+  .center{
+    text-align: center;
+  }
+  /* Services */
+  .services{
+    /* border: 3px solid black; */
+    /* background: url(/img/bg.jpg)no-repeat center center/cover; */
+    width: 80vw;
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services img{
+    box-shadow: 0px 0px 20px rgb(255, 0, 140);
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 300px;
+    align-self: center;
+  }
+  .services-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 50%;
+  }
+  .services-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 50%;
+  }
+  .services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(https://static.vecteezy.com/system/resources/previews/002/070/892/non_2x/abstract-banner-design-template-black-glossy-with-gold-line-and-lighting-effect-on-dark-background-and-texture-vector.jpg)no-repeat center center/cover;
+    background-color: blue;
+    padding: 20px;
+  }
+  .services-container h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+    text-decoration:underline;
+   font-size: 50px;
+   padding: 20px;
+  }
+  /* boxes */
+  #first-box{
+    box-shadow: 0px 0px 20px red;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: 3px solid black;
+    padding: 37px ;
+    border-radius: 35px;
+    background: url(/img/box2.jpg)no-repeat center;
+  }
+  #second-box{
+    box-shadow: 0px 0px 20px mediumseagreen;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border: 3px solid black;
+    padding: 37px ;
+    border-radius: 35px;
+    background: url(/img/box2.jpg)no-repeat center;
+  }
+  #third-box{
+    box-shadow: 0px 0px 20px coral;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid black;
+    padding: 37px ;
+    border-radius: 35px;
+    background: url(/img/box2.jpg)no-repeat center;
+  }
+  #fourth-box{
+    box-shadow: 0px 0px 20px aqua;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 3px solid black;
+    padding: 37px ;
+    border-radius: 35px;
+    background: url(/img/box2.jpg)no-repeat center;
+  }
+  /* Testimonails */
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonials h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: bolder;
+    text-decoration:underline;
+   font-size: 50px;
+   padding: 20px;
+  }
+  .review-container{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+  }
+  .review{
+    box-shadow: 0px 0px 20px pink;
+    color: white;
+    text-shadow: 0px 0px 3px;
+    margin: 20px;
+    background: url(/img/t-box.jpg) no-repeat center center/cover;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: palevioletred; */
+    border: 3px solid black;
+    height: 250px;
+    width: 60vw;
+  }
+  .review img{
+    margin: 10px;
+  }
+  .stars{
+    margin: 1px;
+    height: 50px;
+    width: 150px;
+  }
+  .review p{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+.testimonials-container{
+    background: url(/img/thumbsup.jpg)no-repeat center center/cover ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials-container h2{
+  color: white;
+  text-shadow: 0px 0px 10px;
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px;
+  text-decoration: none;
+}
+.testimonials-container a{
+  text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+.footer img{
+    height: 60px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.footer span{
+    color: white;
+}
+
+.footer p{
+    color: white;
+}
+.container {
+    max-width: 1536px;
+    height: 100px;
+}
+#facebook{
+  height: 30px;
+  margin-left: 950px;
+}
+#linkedin{
+  height: 40px;
+}
+.write{
+  display: flex;
+}
+#r-one{
+  border: 3px solid black;
+  border-radius: 100%;
+}
+#r-two{
+  border: 3px solid black;
+  border-radius: 100%;
+}
+#r-three{
+  border: 3px solid black;
+  border-radius: 100%;
+}
